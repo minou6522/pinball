@@ -2,7 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Panel00 extends JPanel {
+public class MainForGraphics1
+{
+	public static class Panel00 extends JPanel {
 	Timer t = new Timer(1, new Listener());
 	int ctr = 0;
 	double G = 0.1; //Gravitational Constant
@@ -207,3 +209,27 @@ public class Panel00 extends JPanel {
 		}
 	}
 }
+
+public static void main(String[] args)
+{
+
+JFrame frame = new JFrame();
+
+
+frame.setSize(1920,1080);
+
+
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+
+Panel00 panel = new Panel00();
+   
+
+frame.add(panel);
+
+frame.setVisible(true);
+
+
+}
+}
+
